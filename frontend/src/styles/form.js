@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import { Form, Input } from "@rocketseat/unform";
 import { darken } from "polished";
-import { sm } from "./global";
+import { sm, md } from "./global";
 import { Link } from "react-router-dom";
 export const StyleForm = styled(Form)`
   width: 450px;
 
   @media (max-width: ${sm}px) {
     margin-right: 0px;
+    width: 100%;
   }
 `;
 export const InputArea = styled.div`
@@ -19,7 +20,9 @@ export const InputArea = styled.div`
     margin-bottom: 25px;
     font-weight: bold;
   }
-  input {
+
+  input,
+  textarea {
     border-radius: 6px;
     margin-top: 8px;
     padding: 20px 20px;
@@ -31,16 +34,18 @@ export const InputArea = styled.div`
       color: #a4a4a4;
     }
   }
-
+  textarea {
+    min-height: 170px;
+  }
   span {
     margin: 5px 0px;
     font-size: 12px;
     color: #fe2e2e;
   }
-  @media (max-width: ${sm}px) {
+  @media (max-width: ${md}px) {
     input {
-      font-size: 15px;
-      padding: 15px 20px;
+      font-size: 14px;
+      padding: 15px 12px;
     }
     label {
       font-size: 22px;

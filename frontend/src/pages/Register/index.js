@@ -3,7 +3,7 @@ import { RegisterContainer, Container } from "./styles";
 import Form from "../../components/default/Form";
 import logo from "../../assets/logo.svg";
 import { FiArrowLeft } from "react-icons/all";
-import { Link } from "../../styles/global";
+import { LinkDefault } from "../../styles/global";
 export default function Register() {
   return (
     <RegisterContainer>
@@ -15,9 +15,9 @@ export default function Register() {
             Faça seu cadastro entre na plataforma e ajude pessoas a encontrare
             os casos da sua ONG.
           </p>
-          <Link to="/">
+          <LinkDefault to="/">
             <FiArrowLeft size={18} color={"#DC1E3A"} /> Voltar para o logon
-          </Link>
+          </LinkDefault>
         </Container>
         <Form />
       </div>

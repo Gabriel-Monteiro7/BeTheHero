@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { sm, md } from "../../styles/global";
 
-export const RegisterContainer = styled.div`
+export const IncidentContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +16,9 @@ export const RegisterContainer = styled.div`
     box-shadow: 0px 0px 40px -1px #d8d8d8;
     border-radius: 8px;
     @media (max-width: ${sm}px) {
+      h1 {
+        font-size: 1.5rem;
+      }
       flex-wrap: wrap;
       padding: 20px;
     }

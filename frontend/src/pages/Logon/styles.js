@@ -13,6 +13,7 @@ export const Container = styled.div`
   @media (max-width: ${md}px) {
     img {
       width: 50%;
+      margin: 0px auto;
     }
   }
   @media (max-width: ${sm}px) {

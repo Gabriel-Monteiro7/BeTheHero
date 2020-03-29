@@ -22,7 +22,7 @@ export default function FormLogon({ email, senha }) {
   }
   return (
     <StyleForm schema={schema} onSubmit={handleSubmit}>
-      <img src={logo} />
+      <img src={logo} alt="Imagem logo" />
       <InputArea>
         <Input
           name="id"
@@ -32,7 +32,9 @@ export default function FormLogon({ email, senha }) {
         />
       </InputArea>
 
-      <Button type="submit">{loading ? "Carregando..." : "Entrar"}</Button>
+      <Button type="submit" title="Fazer logon na pagina">
+        {loading ? "Carregando..." : "Entrar"}
+      </Button>
       <LinkDefault to="/register">
         <FiLogIn color={"#DC1E3A"} size={16} /> Não tenho cadastro
       </LinkDefault>

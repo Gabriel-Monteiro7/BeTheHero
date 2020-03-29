@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Input } from "@rocketseat/unform";
 import * as Yup from "yup";
-import VMasker from "vanilla-masker";
+// import VMasker from "vanilla-masker";
 
 import { StyleForm, InputArea, Container } from "../../styles/form";
 import { Button } from "../../styles/global";
 import { addUserRequest } from "../../store/modules/user/actions";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 let schema = Yup.object().shape({
   name: Yup.string().required("Campo obrigatório"),
   email: Yup.string()
@@ -25,9 +25,12 @@ let schema = Yup.object().shape({
 });
 
 export default function Form() {
+  const [loading, setLoading] = useState(false);
+
   const dispatch = useDispatch();
   function handleSubmit(user) {
-    user.whatsapp = VMasker.toPattern(user.whatsapp, "(99)99999-9999");
+    setLoading(true);
+    // user.whatsapp = VMasker.toPattern(user.whatsapp, "(99)99999-9999");
     dispatch(addUserRequest(user));
   }
   return (
@@ -54,7 +57,9 @@ export default function Form() {
         </InputArea>
       </Container>
 
-      <Button type="submit">Cadastrar</Button>
+      <Button type="submit" title={"Cadastrar Ong"}>
+        {loading ? "Carregando..." : "Entrar"}
+      </Button>
     </StyleForm>
   );
 }

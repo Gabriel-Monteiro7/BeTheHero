@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { Form, Input } from "@rocketseat/unform";
-import { darken } from "polished";
+import { Form } from "@rocketseat/unform";
+// import { darken } from "polished";
 import { sm, md } from "./global";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 export const StyleForm = styled(Form)`
   width: 450px;
 

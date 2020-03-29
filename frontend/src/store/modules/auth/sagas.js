@@ -8,7 +8,7 @@ import { singInSuccess, singFailure } from "./actions";
 export function* signIn({ payload }) {
   try {
     const { id } = payload;
-    const { data } = yield call(api.post, "sessions", {
+    const { data } = yield call(api.post, "session", {
       id
     });
     const { token, user } = {

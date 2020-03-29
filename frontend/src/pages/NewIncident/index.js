@@ -9,7 +9,7 @@ export default function NewIncident() {
     <IncidentContainer>
       <div className="container">
         <Container>
-          <img src={logo} />
+          <img src={logo} alt="Imagem logo" />
           <h1>Cadastrar novo Caso</h1>
           <p>
             Descreva o caso detalhadamente para encontrar um herói para ersolver

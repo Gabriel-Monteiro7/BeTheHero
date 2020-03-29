@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Input } from "@rocketseat/unform";
 import * as Yup from "yup";
 import { StyleForm, InputArea, Container } from "../../styles/form";
 import { addIncidentRequest } from "../../store/modules/incident/actions";
 import { useDispatch, useSelector } from "react-redux";
-import { Button, Cancelar } from "../../styles/global";
+import { Button } from "../../styles/global";
 let schema = Yup.object().shape({
   title: Yup.string().required("Campo obrigatório"),
   description: Yup.string().required("Campo obrigatório"),
@@ -39,7 +39,9 @@ export default function FormIncident() {
       >
         Cancelar
       </Cancelar> */}
-      <Button type="submit">Cadastrar</Button>
+      <Button type="submit" title={"Cadastrar incidente"}>
+        Cadastrar
+      </Button>
     </StyleForm>
   );
 }

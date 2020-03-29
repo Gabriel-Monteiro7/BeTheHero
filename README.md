@@ -1,5 +1,4 @@
-![](https://lh3.googleusercontent.com/78TScphjhXlFIedluuCtgU0IhwAUf0PeEdTxpwJh6bQhQdpTNHmd4sqS3vK_ScehF3UU-80DuMwDyrUkXNo9RLn1xCvvj0p5GI39rbq6j1k1gC24RcwH_W_N0BtCTfdjanTpxAitWN9GZ3FqM7eIGZgd95OPj-1IoYfEXCLvCv865JAmHZqBikX7274oxEtUDyyKvyUw0yv7C72LuhB1UIfyZo3oz2zLxYckO4z6M0Yv8X081zdrD3leohk27FOTFYV9FDzqF_QEgYBdBc9JecWDdodLiLZ9AMq5Y_Xh2UUgTUiqvrQqFPuUJJXea_pfBl0ne9kYUFPZ9T5zCkw3eY68JBA8XMTXUjWDbkgp0ML-V6tQzzXGqTSm01vHTqg590UY2PmpToELc_GHm43-DYbxBsVvJy6qdLQZRu3PVB9M_2q4ODUMXguwAvAXDOgb0AthadpK42RsvI0yJmA_wkXaXIjiJhk_KXCHq_-E4YkiNq5Y-Mz9o5hw1T2YuBUaAA68CM40mG4dQqM6KIY-0TgFHWJlj7MF7pg5xczArvcd8rraMKJxB2LzNYLUmsGcyEHEpXDGbbYY2yvLXRolTOloDzTPdQRQiHyjtmo9cKmqChCrr6_qlRvNUfFSEuN_DWcjA-yZ7c3-UnZWigSQYtUdZaPvkLPrsfRSEGSLg8wHC9vNCVnsgW9AVf2bbw=w949-h593-no)
-
+![Image](https://user-images.githubusercontent.com/38410548/77857560-9ed53600-71d4-11ea-94ab-b7db34542a78.png)
 
 # [](<[https://github.com/Gabriel-Monteiro7/BeTheHero-Web](https://github.com/Gabriel-Monteiro7/BeTheHero)>)Be The Hero / Semana Omnistack 11.0
 
@@ -31,7 +30,6 @@ O Be The Hero é um projeto para que ONGs possam cadastrar casos em que necessit
 # Clone o repositório
 git clone https://github.com/Gabriel-Monteiro7/BeTheHero.git
 
-
 # Vá para o diretório principal
 cd BeTheHero
 
@@ -55,7 +53,6 @@ npm start
 ```
 
 ## Comentários
-
 
 O sistema foi desenvolvido com o intuito de melhorar o entendimento das biblioteca React Js, framework React Native e Node JS. Usando Hooks, Redux Saga, Styled Components e diversas outras tecnologias para construir sua estrutura. Este é um projeto pessoal realizado na Semana Omnistack 11, logo pode-se ter alguns erros.
 

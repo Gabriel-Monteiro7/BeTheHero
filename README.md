@@ -1,64 +1,68 @@
-![](https://lh3.googleusercontent.com/78TScphjhXlFIedluuCtgU0IhwAUf0PeEdTxpwJh6bQhQdpTNHmd4sqS3vK_ScehF3UU-80DuMwDyrUkXNo9RLn1xCvvj0p5GI39rbq6j1k1gC24RcwH_W_N0BtCTfdjanTpxAitWN9GZ3FqM7eIGZgd95OPj-1IoYfEXCLvCv865JAmHZqBikX7274oxEtUDyyKvyUw0yv7C72LuhB1UIfyZo3oz2zLxYckO4z6M0Yv8X081zdrD3leohk27FOTFYV9FDzqF_QEgYBdBc9JecWDdodLiLZ9AMq5Y_Xh2UUgTUiqvrQqFPuUJJXea_pfBl0ne9kYUFPZ9T5zCkw3eY68JBA8XMTXUjWDbkgp0ML-V6tQzzXGqTSm01vHTqg590UY2PmpToELc_GHm43-DYbxBsVvJy6qdLQZRu3PVB9M_2q4ODUMXguwAvAXDOgb0AthadpK42RsvI0yJmA_wkXaXIjiJhk_KXCHq_-E4YkiNq5Y-Mz9o5hw1T2YuBUaAA68CM40mG4dQqM6KIY-0TgFHWJlj7MF7pg5xczArvcd8rraMKJxB2LzNYLUmsGcyEHEpXDGbbYY2yvLXRolTOloDzTPdQRQiHyjtmo9cKmqChCrr6_qlRvNUfFSEuN_DWcjA-yZ7c3-UnZWigSQYtUdZaPvkLPrsfRSEGSLg8wHC9vNCVnsgW9AVf2bbw=w949-h593-no)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-# [](<[https://github.com/Gabriel-Monteiro7/BeTheHero-Web](https://github.com/Gabriel-Monteiro7/BeTheHero)>)Be The Hero / Semana Omnistack 11.0
+In the project directory, you can run:
 
-> _link:_ [Be The Heros](https://theheros.netlify.com/)
+### `yarn start`
 
-<p align="justify">
-	  :rocket::electron: Be The Hero: Aplicação desenvolvida na 11° Semana Ominstack feito pela Rocketseat.
-</p>
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## [](<[https://github.com/Gabriel-Monteiro7/BeTheHero-Web](https://github.com/Gabriel-Monteiro7/BeTheHero)#tecnologias>)Tecnologias utilizadas
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-Para o desenvolvimento do projeto foi utilizada as seguintes tecnologias:
+### `yarn test`
 
-- :atom: **Node Js** — É uma plataforma desenvolvida sobre o motor JavaScript do Google Chrome para facilmente construir aplicações de rede rápidas e escaláveis;
-- :oil_drum: **Knex** Builder de SQL Query para Javascript
-- :anchor: **Immer** É um pacote minúsculo que permite trabalhar com o estado imutável de uma maneira mais conveniente
-- :nail_care: **Styled Components** - Tecnologia para componentizar estilização CSS no React através do Javascript
-- :atom_symbol: **React Js** — Livraria Javascript para construção de interfaces;
-- :atom_symbol: **React Native** — Livraria que provê uma maneira eficiente de criar aplicações nativas para Android e iOS;
-- :atom_symbol: **Redux Saga** — Biblioteca que foca em fazer os efeitos colaterais em aplicações serem mais fáceis e simples de se criar e manter;
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## [](<[https://github.com/Gabriel-Monteiro7/BeTheHero](https://github.com/Gabriel-Monteiro7/BeTheHero)#projeto>)Projeto
+### `yarn build`
 
-O Be The Hero é um projeto para que ONGs possam cadastrar casos em que necessitem de ajuda a fim de que as pessoas interessadas possam verificá-los e ajudar financeiramente em um caso específico.
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Instalação
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-```
-# Clone o repositório
-git clone https://github.com/Gabriel-Monteiro7/BeTheHero.git
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `yarn eject`
 
-# Vá para o diretório principal
-cd BeTheHero
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-# Vá para o diretório BackEnd
-cd backEnd
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-# Instale as dependências
-npm install
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-# Inicie o servidor do backEnd
-npm start
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-# Vá para o diretório FrontEnd
-cd frontEnd
+## Learn More
 
-# Instale as dependências
-npm install
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-# Inicie o servidor do frontEnd
-npm start
-```
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Comentários
+### Code Splitting
 
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-O sistema foi desenvolvido com o intuito de melhorar o entendimento das biblioteca React Js, framework React Native e Node JS. Usando Hooks, Redux Saga, Styled Components e diversas outras tecnologias para construir sua estrutura. Este é um projeto pessoal realizado na Semana Omnistack 11, logo pode-se ter alguns erros.
+### Analyzing the Bundle Size
 
-## [](<[https://github.com/Gabriel-Monteiro7/BeTheHero](https://github.com/Gabriel-Monteiro7/BeTheHero)#autor>)Autor
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-- **Vinicius Gabriel Vidal Monteiro** - [GitHub](https://github.com/Gabriel-Monteiro7) - Email: [gabrielmont713@gmail.com](mailto:gabrielmont713@gmail.com)
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

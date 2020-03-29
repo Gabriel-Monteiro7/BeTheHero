@@ -42,7 +42,7 @@ export function* addIncident({ payload }) {
 export function* deleteIncident({ payload }) {
   try {
     const { token, incident } = payload;
-    const { data } = yield call(api.delete, "incidents/" + incident.id, {
+    yield call(api.delete, "incidents/" + incident.id, {
       headers: { Authorization: token }
     });
     swal("Incidente Removido", {

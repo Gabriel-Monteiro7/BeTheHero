@@ -11,6 +11,7 @@ export default function Profile() {
   const { token } = useSelector(state => state.auth);
   useEffect(() => {
     dispatch(getAllRequest(token));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

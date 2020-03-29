@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {} from "styled-components";
-import { md, sm } from "../../../styles/global";
+// import { md, sm } from "../../../styles/global";
 
 export const StylesCard = styled.li`
   word-break: break-all;

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import { StylesCard, ButtonDelete } from "./styles";
 import { FiTrash2 } from "react-icons/all";
@@ -9,7 +9,7 @@ import swal from "sweetalert";
 
 export default function Card({ incident }) {
   const { token } = useSelector(state => state.auth);
-  let { value, title, description, id } = incident;
+  let { value, title, description } = incident;
   const dispatch = useDispatch();
   function handleDelete() {
     swal({
@@ -25,7 +25,7 @@ export default function Card({ incident }) {
 
   return (
     <StylesCard>
-      <ButtonDelete onClick={handleDelete}>
+      <ButtonDelete onClick={handleDelete} title="Deletar incidente">
         <FiTrash2 />
       </ButtonDelete>
       <>

@@ -9,7 +9,7 @@ export default function Register() {
     <RegisterContainer>
       <div className="container">
         <Container>
-          <img src={logo} />
+          <img src={logo} alt="Imagem logo" />
           <h1>Cadastro</h1>
           <p>
             Faça seu cadastro entre na plataforma e ajude pessoas a encontrare

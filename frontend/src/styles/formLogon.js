@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Form, Input } from "@rocketseat/unform";
-import { darken } from "polished";
+import { Form } from "@rocketseat/unform";
+// import { darken } from "polished";
 import { sm } from "./global";
 export const StyleForm = styled(Form)`
   margin-right: 30px;

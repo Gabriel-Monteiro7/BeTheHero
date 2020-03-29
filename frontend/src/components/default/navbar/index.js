@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FaBars } from "react-icons/all";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { singOut } from "../../../store/modules/auth/actions";
@@ -17,7 +16,6 @@ import { FiMenu, FiPower } from "react-icons/all";
 export default function NavBar() {
   const [display, setDisplay] = useState(false);
   let { user } = useSelector(state => state.user);
-  let { signed, token } = useSelector(state => state.auth);
   const dispatch = useDispatch();
   function handleSingOut() {
     swal({
@@ -29,9 +27,6 @@ export default function NavBar() {
         dispatch(singOut());
       }
     });
-  }
-  function handleGetOne(token, id) {
-    // dispatch(getOneRequest(token, id));
   }
   return (
     <ContainerProfile>
@@ -46,6 +41,7 @@ export default function NavBar() {
         onClick={() => {
           setDisplay(!display);
         }}
+        title="Botão toggler"
       >
         <FiMenu color={"#DC1E3A"} size={18} />
       </ButtonToggler>

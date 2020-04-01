@@ -8,6 +8,7 @@ import Routes from "./routes";
 import history from "./service/history";
 import { persistor, store } from "./store";
 import { GlobalStyle } from "./styles/global";
+import ButtonTop from "./components/default/ButtonTop";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <PersistGate persistor={persistor}>
         <Router history={history}>
           <Routes />
+          <ButtonTop />
           <GlobalStyle />
           <ToastContainer autoClose={3000} />
         </Router>

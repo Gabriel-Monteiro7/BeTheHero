@@ -1,22 +1,10 @@
 import styled from "styled-components";
-import { sm, md } from "../../styles/global";
+import { sm } from "../../styles/global";
 
 export const RegisterContainer = styled.div`
   min-height: 100vh;
   max-width: 1120px;
   margin: 0 auto;
-
-  /* @media (max-width: ${md}px) {
-    img {
-      width: 50%;
-    }
-  }
-  @media (max-width: ${sm}px) {
-    flex-wrap: wrap;
-    img {
-      width: 80%;
-    }
-  } */
 `;
 
 export const Container = styled.div`
@@ -38,4 +26,16 @@ export const Container = styled.div`
       font-size: 1.5rem;
     }
   }
+`;
+export const NoIncidents = styled.div`
+  color: #d8d8d8;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  margin: auto;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 390px;
 `;

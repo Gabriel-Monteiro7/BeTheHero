@@ -19,7 +19,7 @@ export const Container = styled.div`
   @media (max-width: ${sm}px) {
     flex-wrap: wrap;
     img {
-      width: 80%;
+      width: 100%;
     }
   }
 `;

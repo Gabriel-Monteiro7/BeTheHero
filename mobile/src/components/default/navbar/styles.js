@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { md } from "../../../styles/global";
 import { darken } from "polished";
 import { Link } from "react-router-dom";
-export const ContainerNavBar = styled.nav`
+export const ContainerProfile = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,7 +26,7 @@ export const Container = styled.div`
     justify-content: end;
     span {
       margin: 0px 10px;
-      font-size: 11px;
+      font-size: 13px;
     }
   }
 `;
@@ -57,13 +57,12 @@ export const NewCase = styled(Link)`
 `;
 export const Body = styled(Container)`
   display: flex;
-  transition: 0.5s ease-in-out;
   @media (max-width: ${md}px) {
     padding: 20px;
     flex-direction: column;
     width: 100%;
     height: ${props => (props.display === "true" ? "100%" : "0")};
-    display: ${props => (props.display === "true" ? "flex" : "none")};
+    visibility: ${props => (props.display === "true" ? "visible" : "hidden")};
   }
 `;
 export const ButtonToggler = styled(Logout)`

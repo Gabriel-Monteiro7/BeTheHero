@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { singOut } from "../../../store/modules/auth/actions";
 import {
-  ContainerNavBar,
+  ContainerProfile,
   Container,
   ButtonToggler,
   Body,
@@ -29,7 +29,7 @@ export default function NavBar() {
     });
   }
   return (
-    <ContainerNavBar>
+    <ContainerProfile>
       <Container>
         <Link to="/profile">
           <img src={logo} alt="logo" />
@@ -45,12 +45,12 @@ export default function NavBar() {
       >
         <FiMenu color={"#DC1E3A"} size={18} />
       </ButtonToggler>
-      <Body display={"" + display}>
+      <Body display={"" + display} className={display ? "body-100" : "body-0"}>
         <NewCase to="/incidents/new">Cadastrar novo caso</NewCase>
         <Logout onClick={handleSingOut}>
           <FiPower size={14} color={"#DC1E3A"} />
         </Logout>
       </Body>
-    </ContainerNavBar>
+    </ContainerProfile>
   );
 }

@@ -1,8 +1,11 @@
+
 ![Image](https://user-images.githubusercontent.com/38410548/77857560-9ed53600-71d4-11ea-94ab-b7db34542a78.png)
 
 # [](<[https://github.com/Gabriel-Monteiro7/BeTheHero-Web](https://github.com/Gabriel-Monteiro7/BeTheHero)>)Be The Hero / Semana Omnistack 11.0
 
-> _link da aplicação web:_ [Be The Heros](https://theheros.netlify.com/) > _link para baixar o apk da versão mobile:_ [Be The Heros Mobile](https://drive.google.com/drive/folders/1T4vqA4elx21sdhFn8vsy4gGjbsAWWsDr?usp=sharing)
+> _link da aplicação web:_ [Be The Heros](https://theheros.netlify.com/)
+> 
+> _link para baixar o apk da versão mobile:_ [Be The Heros Mobile](https://drive.google.com/drive/folders/1T4vqA4elx21sdhFn8vsy4gGjbsAWWsDr?usp=sharing)
 
 :rocket::electron: Be The Hero: Aplicação desenvolvida na 11° Semana Ominstack feito pela Rocketseat.
 

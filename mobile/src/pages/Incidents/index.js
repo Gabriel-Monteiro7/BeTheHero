@@ -93,6 +93,7 @@ export default function Incidents() {
           <Incident>
             <IncidentProperty>ONG:</IncidentProperty>
             <IncidentValue>{incident.name}</IncidentValue>
+
             <IncidentProperty>CASO:</IncidentProperty>
             <IncidentValue>{incident.title}</IncidentValue>
             <IncidentProperty>VALOR:</IncidentProperty>

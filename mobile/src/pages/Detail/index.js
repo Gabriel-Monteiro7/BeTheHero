@@ -58,6 +58,8 @@ export default function Detail() {
         </IncidentValue>
         <IncidentProperty>CASO:</IncidentProperty>
         <IncidentValue>{incident.title}</IncidentValue>
+        <IncidentProperty>DESCRIÇÃO:</IncidentProperty>
+        <IncidentValue>{incident.description}</IncidentValue>
         <IncidentProperty>VALOR:</IncidentProperty>
         <IncidentValue>{formatPrice(incident.value)}</IncidentValue>
       </Incident>

@@ -29,9 +29,10 @@ module.exports = {
 
   async index(req, res) {
     const { page = 1 } = req.query;
-
     try {
-      const [count] = await connection('incidents').count();
+
+      const count = await connection('incidents').count('id', { as: 'number' }).first();
+      console.log(count.number)
 
       const incidents = await connection('incidents')
         .join('ongs', 'ongs.id', '=', 'incidents.ong_id')
@@ -39,7 +40,7 @@ module.exports = {
         .offset((page - 1) * 5)
         .select(['incidents.*', 'ongs.name', 'ongs.email', 'ongs.whatsapp', 'ongs.city', 'ongs.uf'])
 
-      res.header('X-Total-Count', count['count(*)']);
+      res.header('X-Total-Count', count.number);
 
       if (incidents.length == 0) {
         return res.status(200).json({ erro: "Nenhum incidente cadastrado" })
@@ -49,6 +50,7 @@ module.exports = {
     } catch (err) {
       return res.status(400).json({ erro: "Erro ao listar" })
     }
+
 
   },
 

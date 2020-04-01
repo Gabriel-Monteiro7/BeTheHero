@@ -1,6 +1,6 @@
 import axios from "axios";
 
-//Caso n funcione o localhost, tente colocar o ip
+//Se o localhost não funcionar, use o ip
 //const URL = 'https://localhost:3333'
 const URL = "https://beheros.herokuapp.com";
 

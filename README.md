@@ -2,11 +2,9 @@
 
 # [](<[https://github.com/Gabriel-Monteiro7/BeTheHero-Web](https://github.com/Gabriel-Monteiro7/BeTheHero)>)Be The Hero / Semana Omnistack 11.0
 
-> _link:_ [Be The Heros](https://theheros.netlify.com/)
+> _link da aplicação web:_ [Be The Heros](https://theheros.netlify.com/) > _link para baixar o apk da versão mobile:_ [Be The Heros Mobile](https://drive.google.com/drive/folders/1T4vqA4elx21sdhFn8vsy4gGjbsAWWsDr?usp=sharing)
 
-<p align="justify">
-	  :rocket::electron: Be The Hero: Aplicação desenvolvida na 11° Semana Ominstack feito pela Rocketseat.
-</p>
+:rocket::electron: Be The Hero: Aplicação desenvolvida na 11° Semana Ominstack feito pela Rocketseat.
 
 ## [](<[https://github.com/Gabriel-Monteiro7/BeTheHero-Web](https://github.com/Gabriel-Monteiro7/BeTheHero)#tecnologias>)Tecnologias utilizadas
 
@@ -34,7 +32,7 @@ git clone https://github.com/Gabriel-Monteiro7/BeTheHero.git
 cd BeTheHero
 
 # Vá para o diretório BackEnd
-cd backEnd
+cd backend
 
 # Instale as dependências
 npm install
@@ -43,7 +41,7 @@ npm install
 npm start
 
 # Vá para o diretório FrontEnd
-cd frontEnd
+cd frontend
 
 # Instale as dependências
 npm install

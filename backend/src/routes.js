@@ -1,19 +1,30 @@
-const express = require("express");
-const routes = express.Router();
-const OngController = require("./controllers/OngController");
-const IncidentController = require("./controllers/IncidentController");
-const ProfileController = require("./controllers/ProfileController");
-const SessionController = require("./controllers/SessionController");
+const express = require("express")
 
-routes.post("/session", SessionController.create);
+const OngController = require('./controllers/OngController')
+const IncidentCotroller = require('./controllers/IncidentController')
+const ProfileController = require('./controllers/ProfileController')
+const SessionController = require('./controllers/SessionController')
 
-routes.get("/ongs", OngController.index);
-routes.post("/ongs", OngController.create);
+const OngValidation = require('./validations/OngValidation')
+const IncidentValidation = require('./validations/IncidentValidation')
+const ProfileValidation = require('./validations/ProfileValidation')
+const SessionValidation = require('./validations/SessionValidation')
 
-routes.get("/incidents", IncidentController.index);
-routes.post("/incidents", IncidentController.create);
-routes.delete("/incidents/:id", IncidentController.delete);
+const routes = express.Router()
 
-routes.get("/profile", ProfileController.index);
+routes.post('/ongs', OngValidation.post(), OngController.create)
+routes.get('/ongs', OngController.index)
+routes.put('/ongs', OngValidation.put(), OngController.update)
+routes.delete('/ongs', OngValidation.delete(), OngController.delete)
+
+routes.post('/incidents', IncidentValidation.post(), IncidentCotroller.create)
+routes.get('/incidents', IncidentValidation.get(), IncidentCotroller.index)
+routes.put('/incidents/:id', IncidentValidation.put(), IncidentCotroller.update)
+routes.delete('/incidents/:id', IncidentValidation.delete(), IncidentCotroller.delete)
+
+routes.post('/session', SessionValidation.post(), SessionController.create)
+routes.get('/forgetpassword', SessionValidation.get(), SessionController.forgotPassword)
+
+routes.get('/profile', ProfileValidation.get(), ProfileController.index)
 
 module.exports = routes;

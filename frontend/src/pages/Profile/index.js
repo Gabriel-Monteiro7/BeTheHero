@@ -10,8 +10,8 @@ export default function Profile() {
   const [loading, setLoading] = useState(true);
 
   const dispatch = useDispatch();
-  let { incidents } = useSelector(state => state.incident);
-  const { token } = useSelector(state => state.auth);
+  let { incidents } = useSelector((state) => state.incident);
+  const { token } = useSelector((state) => state.auth);
   useEffect(() => {
     setLoading(true);
     dispatch(getAllRequest(token));
@@ -21,13 +21,14 @@ export default function Profile() {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
     animationData: load,
     rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
+      preserveAspectRatio: "xMidYMid slice",
+    },
   };
   return (
     <RegisterContainer>

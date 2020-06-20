@@ -6,7 +6,6 @@ export const RegisterContainer = styled.div`
   max-width: 1120px;
   margin: 0 auto;
 `;
-
 export const Container = styled.div`
   position: relative;
   margin: 40px 20px;

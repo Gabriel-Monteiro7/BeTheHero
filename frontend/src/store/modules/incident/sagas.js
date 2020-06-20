@@ -8,17 +8,16 @@ import { toast } from "react-toastify";
 import {
   getAllSuccess,
   addIncidentSuccess,
-  deleteIncidentSuccess
+  deleteIncidentSuccess,
 } from "./actions";
 export function* getAll({ payload }) {
   try {
     const { token } = payload;
 
     const { data } = yield call(api.get, "profile", {
-      headers: { Authorization: token }
+      headers: { Authorization: token },
     });
-
-    yield put(getAllSuccess(data));
+    yield put(getAllSuccess(data.erro !== undefined ? [] : data));
   } catch (erro) {
     toast.error("Erro na requisição");
   }
@@ -27,13 +26,13 @@ export function* addIncident({ payload }) {
   try {
     const { token, incident } = payload;
     const { data } = yield call(api.post, "incidents/", incident, {
-      headers: { Authorization: token }
+      headers: { Authorization: token },
     });
     yield put(addIncidentSuccess(data));
     history.push("/profile");
     swal("Incidente Cadastrado", {
       button: false,
-      icon: "success"
+      icon: "success",
     });
   } catch (erro) {
     toast.error("Erro na requisição");
@@ -43,11 +42,11 @@ export function* deleteIncident({ payload }) {
   try {
     const { token, incident } = payload;
     yield call(api.delete, "incidents/" + incident.id, {
-      headers: { Authorization: token }
+      headers: { Authorization: token },
     });
     swal("Incidente Removido", {
       button: false,
-      icon: "success"
+      icon: "success",
     });
     yield put(deleteIncidentSuccess(incident));
   } catch (erro) {
@@ -57,5 +56,5 @@ export function* deleteIncident({ payload }) {
 export default all([
   takeLatest("@incident/GET_ALL_REQUEST", getAll),
   takeLatest("@incident/ADD_INCIDENT_REQUEST", addIncident),
-  takeLatest("@incident/DELETE_INCIDENT_REQUEST", deleteIncident)
+  takeLatest("@incident/DELETE_INCIDENT_REQUEST", deleteIncident),
 ]);

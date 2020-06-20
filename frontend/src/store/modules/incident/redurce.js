@@ -1,10 +1,10 @@
 import produce from "immer";
 const INITIAL_STATE = {
-  incidents: []
+  incidents: [],
 };
 
 export default function user(state = INITIAL_STATE, action) {
-  return produce(state, draft => {
+  return produce(state, (draft) => {
     let { payload } = action;
     switch (action.type) {
       case "@incident/GET_ALL_REQUEST":
@@ -20,7 +20,7 @@ export default function user(state = INITIAL_STATE, action) {
       case "@incident/DELETE_INCIDENT_REQUEST":
         break;
       case "@incident/DELETE_INCIDENT_SUCCESS":
-        draft.incidents = draft.incidents.filter(value => {
+        draft.incidents = draft.incidents.filter((value) => {
           return value.id === payload.incident.id ? false : true;
         });
         break;
